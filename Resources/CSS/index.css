@@ -11,6 +11,9 @@
 html {
     font-size: 18px;
 }
+body {
+    background-color: var(--very-dark-blue);
+}
 
 /* # Constants */
 /* ## Colors */
@@ -33,7 +36,16 @@ html {
 
 /* # Layout and Design */
 @media only screen and (min-width: 375px) {
+    .grid-container {
+        display: grid;
+        justify-content: center;
+        grid-template: repeat(7, 30px) / 300px;
+        gap: 20px 20px;
+    }
 
+    .grid-item {
+        background-color: white;
+    }
 }
 
 @media only screen and (min-width: 1440px) {
