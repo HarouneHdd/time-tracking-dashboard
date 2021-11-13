@@ -1,0 +1,41 @@
+/* # General */
+/* Weights to be used: 300, 400, 500 */
+@font-face {
+    font-family: "Rubik";
+    src: url(../Fonts/Rubik-VariableFont_wght.ttf) format("truetype");
+}
+
+* {
+    font-family: "Rubik", Helvetica, sans-serif;
+}
+html {
+    font-size: 18px;
+}
+
+/* # Constants */
+/* ## Colors */
+:root {
+    /* ### Primary */
+    --blue: #5847eb;
+
+    --light-red: #ff8c66;
+    --soft-blue: #56c2e6;
+    --light-red: #ff5c7c;
+    --lime-green: #4acf81;
+    --violet: #7536d3;
+    --soft-orange: #f1c65b;
+    /* ### Neutral */
+    --very-dark-blue: #0f1424;
+    --dark-blue: #1c1f4a;
+    --desaturated-blue: #6f76c8;
+    --pale-blue: #bdc1ff;
+}
+
+/* # Layout and Design */
+@media only screen and (min-width: 375px) {
+
+}
+
+@media only screen and (min-width: 1440px) {
+
+}
