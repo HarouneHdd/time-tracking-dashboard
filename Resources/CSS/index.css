@@ -48,9 +48,12 @@ h1, h2, p, small {
     }
 
     .grid-item {
-        background-color: white;
         border-radius: 15px;
         overflow: hidden;
+    }
+    .grid-item .info-card {
+        background-color: var(--dark-blue);
+        
     }
 }
 
