@@ -25,7 +25,7 @@ h1, h2, p, small {
     /* ### Primary */
     --blue: #5847eb;
 
-    --light-red: #ff8c66;
+    --light-orange: #ff8c66;
     --soft-blue: #56c2e6;
     --light-red: #ff5c7c;
     --lime-green: #4acf81;
@@ -43,17 +43,81 @@ h1, h2, p, small {
     .grid-container {
         display: grid;
         justify-content: center;
-        grid-template: repeat(7, 1fr) / 325px;
-        gap: 25px 25px;
+        grid-template: 400px, repeat(6, 180px) / 325px;
+        gap: 0 25px;
     }
 
     .grid-item {
+        position: relative;
         border-radius: 15px;
         overflow: hidden;
     }
     .grid-item .info-card {
         background-color: var(--dark-blue);
-        
+        position: relative;
+        z-index: 1;
+        height: 105px;
+        width: 325px;
+        border-radius: 15px;
+        bottom: 25px;
+    }
+
+    .background {
+        height: 60px;
+    }
+
+    #work .background {
+        background-color: var(--light-orange);
+    }
+    #work .background img {
+        position: absolute;
+        left: 228px;
+        bottom: 97px;
+    }
+
+    #play .background {
+        background-color: var(--soft-blue);
+    }
+    #play .background img {
+        position: absolute;
+        left: 230px;
+        bottom: 96px;
+    }
+
+    #study .background {
+        background-color: var(--light-red);
+    }
+    #study .background img {
+        position: absolute;
+        left: 226px;
+        bottom: 96px;
+    }
+
+    #exercise .background {
+        background-color: var(--lime-green);
+    }
+    #exercise .background img {
+        position: absolute;
+        left: 228px;
+        bottom: 113px;
+    }
+
+    #social .background {
+        background-color: var(--violet);
+    }
+    #social .background img {
+        position: absolute;
+        left: 234px;
+        bottom: 81px;
+    }
+
+    #self-care .background {
+        background-color: var(--soft-orange);
+    }
+    #self-care .background img {
+        position: absolute;
+        left: 242px;
+        bottom: 113px;
     }
 }
 
