@@ -220,27 +220,27 @@ h1, h2, p, small {
     }
     .grid-item .profile-info {
         position: absolute;
-        height: 70%;
+        height: 68%;
         width: 100%;
         top: 0;
     }
     .grid-item .profile-info img {
         width: 70px;
         left: 30px;
-        top: 33px;
+        top: 41px;
     }
     .grid-item .profile-info small {
         font-size: 0.875rem;
         font-weight: 300;
         right: 140px;
-        top: 140px;
+        top: 150px;
     }
     .grid-item .profile-info h1 {
         font-size: 2rem;
         font-weight: 300;
         line-height: 2.5rem;
         left: 30px;
-        top: 163px;
+        top: 173px;
     }
 
     .grid-item .temporal-options {
@@ -254,23 +254,23 @@ h1, h2, p, small {
     }
     #daily {
         position: absolute;
-        bottom: 105px;
+        bottom: 120px;
         left: 30px;
     }
     #weekly {
         position: absolute;
-        bottom: 70px;
+        bottom: 80px;
         left: 30px;
     }
     #monthly {
         position: absolute;
-        bottom: 35px;
+        bottom: 40px;
         left: 30px;
     }
     /* Other */
     .grid-item .info-card {
         position: absolute;
-        height: 75%;
+        height: 80%;
         width: 100%;
         bottom: 0;
     }
@@ -281,9 +281,9 @@ h1, h2, p, small {
         top: 30px;
     }
     .grid-item .info-card p {
-        font-size: 1.8rem;
+        font-size: 2.5rem;
         font-weight: 300;
-        bottom: 30px;
+        bottom: 70px;
         left: 30px;
     }
     .grid-item .info-card img {
@@ -293,7 +293,7 @@ h1, h2, p, small {
     .grid-item .info-card small {
         font-weight: 300;
         font-size: 0.875rem;
-        right: 30px;
+        left: 30px;
         bottom: 40px;
     }
 
@@ -303,32 +303,32 @@ h1, h2, p, small {
     }
 
     #work .background img {
-        left: 228px;
-        bottom: 112px;
+        left: 155px;
+        bottom: 180px;
     }
 
     #play .background img {
-        left: 229px;
-        bottom: 110px;
+        left: 155px;
+        bottom: 176px;
     }
 
     #study .background img {
-        left: 225px;
-        bottom: 110px;
+        left: 155px;
+        bottom: 180px;
     }
 
     #exercise .background img {
-        left: 225px;
-        bottom: 126px;
+        left: 153px;
+        bottom: 195px;
     }
 
     #social .background img {
-        left: 228px;
-        bottom: 95px;
+        left: 160px;
+        bottom: 162px;
     }
 
     #self-care .background img {
-        left: 240px;
-        bottom: 130px;
+        left: 164px;
+        bottom: 190px;
     }
 }
