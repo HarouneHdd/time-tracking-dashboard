@@ -208,5 +208,145 @@ h1, h2, p, small {
 }
 
 @media only screen and (min-width: 1440px) {
+    .grid-container {
+        grid-template: repeat(2, 250px) / repeat(4, 250px);
+        gap: 30px 30px;
+        margin: 0;
+        margin-top: 180px;
+    }
+    /* Profile */
+    #profile {
+        grid-row: 1 / span 2;
+        border: 1px solid white;
+    }
+    .grid-item .profile-info {
+        position: absolute;
+        height: 70%;
+        width: 100%;
+        top: 0;
+    }
+    .grid-item .profile-info img {
+        width: 70px;
+        left: 30px;
+        top: 33px;
+    }
+    .grid-item .profile-info small {
+        font-size: 0.875rem;
+        font-weight: 300;
+        right: 140px;
+        top: 140px;
+    }
+    .grid-item .profile-info h1 {
+        font-size: 2rem;
+        font-weight: 300;
+        line-height: 2.5rem;
+        left: 30px;
+        top: 163px;
+    }
 
+    .grid-item .temporal-options {
+        position: relative;
+        height: 45%;
+        width: 100%;
+        top: 270px;
+    }
+    .grid-item .temporal-options p {
+        text-align: start;
+    }
+    #daily {
+        position: absolute;
+        bottom: 105px;
+        left: 30px;
+    }
+    #weekly {
+        position: absolute;
+        bottom: 70px;
+        left: 30px;
+    }
+    #monthly {
+        position: absolute;
+        bottom: 35px;
+        left: 30px;
+    }
+    /* Other */
+    .grid-item .info-card {
+        position: absolute;
+        height: 75%;
+        width: 100%;
+        bottom: 0;
+    }
+    .grid-item .info-card h2 {
+        font-size: 1rem;
+        font-weight: 500;
+        left: 30px;
+        top: 30px;
+    }
+    .grid-item .info-card p {
+        font-size: 1.8rem;
+        font-weight: 300;
+        bottom: 30px;
+        left: 30px;
+    }
+    .grid-item .info-card img {
+        right: 30px;
+        top: 35px;
+    }
+    .grid-item .info-card small {
+        font-weight: 300;
+        font-size: 0.875rem;
+        right: 30px;
+        bottom: 40px;
+    }
+
+    .background {
+        height: 90%;
+    }
+
+    #work {
+        border: 1px solid white;
+    }
+    #work .background img {
+        left: 228px;
+        bottom: 112px;
+    }
+
+    #play {
+        border: 1px solid white;
+    }
+    #play .background img {
+        left: 229px;
+        bottom: 110px;
+    }
+
+    #study {
+        border: 1px solid white;
+    }
+    #study .background img {
+        left: 225px;
+        bottom: 110px;
+    }
+
+    #exercise {
+        border: 1px solid white;
+    }
+    #exercise .background img {
+        left: 225px;
+        bottom: 126px;
+    }
+
+    #social {
+        border: 1px solid white;
+    }
+    #social .background img {
+        left: 228px;
+        bottom: 95px;
+    }
+
+    #self-care {
+        border: 1px solid white;
+    }
+    #self-care .background img {
+        left: 240px;
+        bottom: 130px;
+    }
 }
