@@ -99,6 +99,15 @@ h1, h2, p, small {
     .grid-item .temporal-options p {
         text-align: center;
     }
+    #daily {
+        color: var(--pale-blue);
+    }
+    #weekly {
+
+    }
+    #monthly {
+        color: var(--pale-blue);
+    }
     /* Other */
     .grid-item .info-card {
         background-color: var(--dark-blue);
