@@ -44,15 +44,62 @@ h1, h2, p, small {
     .grid-container {
         display: grid;
         justify-content: center;
-        grid-template: 400px, repeat(6, 180px) / 325px;
+        grid-template: auto, repeat(6, 180px) / 325px;
         gap: 0 25px;
     }
-
+    /* General item */
     .grid-item {
         position: relative;
         border-radius: 15px;
         overflow: hidden;
     }
+    /* Profile */
+    .grid-item .profile-info {
+        background-color: var(--blue);
+        border-radius: 15px;
+        position: relative;
+        z-index: 1;
+        height: 130px;
+        top: 20px;
+    }
+    .grid-item .profile-info img {
+        position: absolute;
+        width: 60px;
+        border: 3px solid white;
+        border-radius: 50%;
+        left: 30px;
+        top: 33px;
+    }
+    .grid-item .profile-info small {
+        position: absolute;
+        font-size: 0.875rem;
+        font-weight: 300;
+        color: var(--pale-blue);
+        right: 140px;
+        top: 40px;
+    }
+    .grid-item .profile-info h1 {
+        position: absolute;
+        font-size: 1.35rem;
+        font-weight: 300;
+        right: 38px;
+        top: 63px;
+    }
+
+    .grid-item .temporal-options {
+        background-color: var(--dark-blue);
+        border-radius: 15px;
+        margin-bottom: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        height: 75px;
+        padding-top: 20px;
+    }
+    .grid-item .temporal-options p {
+        text-align: center;
+    }
+    /* Other */
     .grid-item .info-card {
         background-color: var(--dark-blue);
         position: relative;
