@@ -217,7 +217,6 @@ h1, h2, p, small {
     /* Profile */
     #profile {
         grid-row: 1 / span 2;
-        border: 1px solid white;
     }
     .grid-item .profile-info {
         position: absolute;
@@ -300,51 +299,34 @@ h1, h2, p, small {
 
     .background {
         height: 90%;
+        width: 100%;
     }
 
-    #work {
-        border: 1px solid white;
-    }
     #work .background img {
         left: 228px;
         bottom: 112px;
     }
 
-    #play {
-        border: 1px solid white;
-    }
     #play .background img {
         left: 229px;
         bottom: 110px;
     }
 
-    #study {
-        border: 1px solid white;
-    }
     #study .background img {
         left: 225px;
         bottom: 110px;
     }
 
-    #exercise {
-        border: 1px solid white;
-    }
     #exercise .background img {
         left: 225px;
         bottom: 126px;
     }
 
-    #social {
-        border: 1px solid white;
-    }
     #social .background img {
         left: 228px;
         bottom: 95px;
     }
 
-    #self-care {
-        border: 1px solid white;
-    }
     #self-care .background img {
         left: 240px;
         bottom: 130px;
