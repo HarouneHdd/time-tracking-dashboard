@@ -46,6 +46,8 @@ h1, h2, p, small {
         justify-content: center;
         grid-template: auto, repeat(6, 180px) / 325px;
         gap: 0 25px;
+        margin-top: 50px;
+        margin-bottom: 50px;
     }
     /* General item */
     .grid-item {
