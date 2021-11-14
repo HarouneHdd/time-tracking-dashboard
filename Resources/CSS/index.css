@@ -6,7 +6,8 @@
 }
 
 * {
-    font-family: "Rubik", Helvetica, sans-serif;
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
 }
 html {
     font-size: 18px;
@@ -56,10 +57,37 @@ h1, h2, p, small {
         background-color: var(--dark-blue);
         position: relative;
         z-index: 1;
-        height: 105px;
+        height: 120px;
         width: 325px;
         border-radius: 15px;
         bottom: 25px;
+    }
+    .grid-item .info-card h2 {
+        position: absolute;
+        font-size: 1rem;
+        font-weight: 500;
+        left: 30px;
+        top: 30px;
+    }
+    .grid-item .info-card p {
+        position: absolute;
+        font-size: 1.8rem;
+        font-weight: 300;
+        bottom: 30px;
+        left: 30px;
+    }
+    .grid-item .info-card img {
+        position: absolute;
+        right: 30px;
+        top: 35px;
+    }
+    .grid-item .info-card small {
+        position: absolute;
+        font-weight: 300;
+        color: var(--pale-blue);
+        font-size: 0.875rem;
+        right: 30px;
+        bottom: 40px;
     }
 
     .background {
@@ -72,7 +100,7 @@ h1, h2, p, small {
     #work .background img {
         position: absolute;
         left: 228px;
-        bottom: 97px;
+        bottom: 112px;
     }
 
     #play .background {
@@ -80,8 +108,8 @@ h1, h2, p, small {
     }
     #play .background img {
         position: absolute;
-        left: 230px;
-        bottom: 96px;
+        left: 229px;
+        bottom: 110px;
     }
 
     #study .background {
@@ -89,8 +117,8 @@ h1, h2, p, small {
     }
     #study .background img {
         position: absolute;
-        left: 226px;
-        bottom: 96px;
+        left: 225px;
+        bottom: 110px;
     }
 
     #exercise .background {
@@ -98,8 +126,8 @@ h1, h2, p, small {
     }
     #exercise .background img {
         position: absolute;
-        left: 228px;
-        bottom: 113px;
+        left: 225px;
+        bottom: 126px;
     }
 
     #social .background {
@@ -107,8 +135,8 @@ h1, h2, p, small {
     }
     #social .background img {
         position: absolute;
-        left: 234px;
-        bottom: 81px;
+        left: 228px;
+        bottom: 95px;
     }
 
     #self-care .background {
@@ -116,8 +144,8 @@ h1, h2, p, small {
     }
     #self-care .background img {
         position: absolute;
-        left: 242px;
-        bottom: 113px;
+        left: 240px;
+        bottom: 130px;
     }
 }
 
