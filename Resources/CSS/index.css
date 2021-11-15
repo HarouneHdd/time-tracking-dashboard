@@ -100,15 +100,11 @@ h1, h2, p, small {
     }
     .grid-item .temporal-options p {
         text-align: center;
-    }
-    #daily {
         color: var(--pale-blue);
     }
-    #weekly {
-
-    }
-    #monthly {
-        color: var(--pale-blue);
+    .grid-item .temporal-options p:hover {
+        cursor: pointer;
+        color: white;
     }
     /* Other */
     .grid-item .info-card {
@@ -119,6 +115,10 @@ h1, h2, p, small {
         width: 325px;
         border-radius: 15px;
         bottom: 25px;
+    }
+    .grid-item .info-card:hover {
+        background-color: #282b52;
+        cursor: pointer;
     }
     .grid-item .info-card h2 {
         position: absolute;
@@ -137,7 +137,10 @@ h1, h2, p, small {
     .grid-item .info-card img {
         position: absolute;
         right: 30px;
-        top: 35px;
+        top: 33px;
+        cursor: pointer;
+        
+        padding: 4px;
     }
     .grid-item .info-card small {
         position: absolute;
@@ -145,7 +148,7 @@ h1, h2, p, small {
         color: var(--pale-blue);
         font-size: 0.875rem;
         right: 30px;
-        bottom: 40px;
+        bottom: 38px;
     }
 
     .background {
@@ -288,7 +291,7 @@ h1, h2, p, small {
     }
     .grid-item .info-card img {
         right: 30px;
-        top: 35px;
+        top: 33px;
     }
     .grid-item .info-card small {
         font-weight: 300;
