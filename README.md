@@ -25,7 +25,7 @@ Users should be able to:
 ### Screenshot
 
 <img src="Screenshots/desktop-version.png" alt="desktop version"/>
-<img src="Screenshots/mobile-version.png" alt="mobile version"/>
+<img src="Screenshots/mobile-version.png" alt="mobile version" width="250"/>
 
 ### Links
 
