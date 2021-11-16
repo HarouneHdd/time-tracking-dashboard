@@ -22,38 +22,56 @@ const requestAndSet = selectedPeriod => {
     request.send();
     
     request.onload = () => {
-        const response = request.response;
-        const data = JSON.stringify(response);
-        console.log(data);
-    
+        const data = request.response;
+
         if (selectedPeriod === 'daily') {
             dailyBtn.style.color = '#ffffff';
             weeklyBtn.style.color = '#bdc1ff';
             monthlyBtn.style.color = '#bdc1ff';
-
-            workElement.querySelector('p').innerHTML = 'day';
-            workElement.querySelector('small').innerHTML = '...';
         }
         else if (selectedPeriod === 'weekly') {
             dailyBtn.style.color = '#bdc1ff';
             weeklyBtn.style.color = '#ffffff';
             monthlyBtn.style.color = '#bdc1ff';
-
-            workElement.querySelector('p').innerHTML = 'week';
-            workElement.querySelector('small').innerHTML = '...';
         }
         else if (selectedPeriod === 'monthly') {
             dailyBtn.style.color = '#bdc1ff';
             weeklyBtn.style.color = '#bdc1ff';
             monthlyBtn.style.color = '#ffffff';
-
-            workElement.querySelector('p').innerHTML = 'month';
-            workElement.querySelector('small').innerHTML = '...';
         }
+
+        updateStats(workElement, 0, data, selectedPeriod);
+        updateStats(playElement, 1, data, selectedPeriod);
+        updateStats(studyElement, 2, data, selectedPeriod);
+        updateStats(exerciseElement, 3, data, selectedPeriod);
+        updateStats(socialElement, 4, data, selectedPeriod);
+        updateStats(selfCareElement, 5, data, selectedPeriod);
     }
 }
 
+const updateStats = (element, elementIndex, data, selectedPeriod) => {
+    let addedText;
+
+    if (selectedPeriod === 'daily') {
+        addedText = "Yesterday - ";
+    }
+    else if (selectedPeriod === 'weekly') {
+        addedText = "Last Week - ";
+    }
+    else if (selectedPeriod === 'monthly') {
+        addedText = "Last Month - ";
+    }
+    else {
+        console.error('Unknown selected period!');
+    }
+
+    element.querySelector('p').innerHTML = data[elementIndex].timeframes[selectedPeriod].current + "hrs";
+    element.querySelector('small').innerHTML = addedText + data[elementIndex].timeframes[selectedPeriod].previous + "hrs";
+}
+
 /* Setting daily, weekly and monthly buttons */
-dailyBtn.addEventListener('onClick', requestAndSet('daily'));
-weeklyBtn.addEventListener('onClick', requestAndSet('weekly'));
-monthlyBtn.addEventListener('onClick', requestAndSet('monthly'));
+dailyBtn.addEventListener('click', () => requestAndSet('daily'));
+weeklyBtn.addEventListener('click', () => requestAndSet('weekly'));
+monthlyBtn.addEventListener('click', () => requestAndSet('monthly'));
+
+requestAndSet('weekly');
