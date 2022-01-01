@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [https://harounehdd.github.io/time-tracking-dashboard/](https://harounehdd.github.io/time-tracking-dashboard/)
+- Live Site URL: [https://harounehadid.github.io/time-tracking-dashboard/](https://harounehadid.github.io/time-tracking-dashboard/)
 
 ## My process
 
